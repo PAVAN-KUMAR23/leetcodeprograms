@@ -75,18 +75,14 @@ public class LinkedListMiddleElement {
 	//                                    //
 	////////////////////////////////////////
     public Node findMiddleNode(){
-        if(head==null){
-            return null;
-        }
+    	if(head==null) return null;
         Node slow=head;
         Node fast=head;
-        while(fast!=null && fast.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
+        while(fast!=null && fast.next!=null) {
+        	slow=slow.next;
+        	fast=fast.next.next;
         }
         return slow;
-        
-        
     }
     
     public static void main(String[] args) {

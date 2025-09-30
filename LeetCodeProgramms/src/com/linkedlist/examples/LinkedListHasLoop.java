@@ -89,6 +89,9 @@ public class LinkedListHasLoop {
 	        
 	    }
 	    public Boolean hasLoop() {
+	    	if(head==null) {
+	    		return false;
+	    	}
 	    	Node slow=head;
 	    	Node fast=head;
 	    	while(fast!=null && fast.next!=null) {
